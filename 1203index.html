@@ -1,0 +1,826 @@
+<!doctype html>
+<html>
+
+<head>
+   <script type="text/javascript">
+    (function (id) {
+        function append(scriptid, url, async) {
+            var d = document, sn = 'script', f = d.getElementsByTagName(sn)[0];
+            if (!f) f = d.head;
+            var s = d.createElement(sn);
+            s.async = true;
+            s.id = scriptid;
+            s.src = url;
+            f.parentNode.insertBefore(s, f);
+        }
+      function getRootDomain() {
+            var parts = window.location.hostname.split('.');
+            if (parts.length === 2) rootDomain = parts[0];
+            else if (parts.length > 2) {
+              // see if the next to last value is a common tld
+              var part = parts[parts.length - 2];
+              if (part === 'com' || part === 'co') {
+                rootDomain = parts[parts.length - 3]; // go back one more
+              } else {
+                rootDomain = part;
+              }}
+           return rootDomain; }
+        window.evidon = {};
+        window.evidon.id = id;
+        var cdn = '//c.evidon.com/', rootDomain = getRootDomain(), noticecdn = cdn + 'sitenotice/';
+        append('evidon-notice', noticecdn + 'evidon-sitenotice-tag.js', false);
+        append('evidon-location', cdn + 'geo/country.js', true);
+        append('evidon-themes', noticecdn + id + '/snthemes.js', true);
+        if (rootDomain) append('evidon-settings', noticecdn + id + '/' + rootDomain + '/settings.js', true);
+        window.evidon.priorConsentCallback = function () {
+// Add the tags which need to wait for prior consent here.  
+// This should be all your advertising tags and probably most of your social and tracking tags.
+        }
+    })(4478);
+</script>
+
+<meta charset="utf-8">
+<title>VMware IT Excellence</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://www.vmware.com/content/dam/vmwaredesigns/scraper/non-responsive.css"/>
+<!--<link rel="stylesheet" type="text/css" href="https://www.vmware.com/content/dam/vmwaredesigns/scraper/scrapper-footer.css"/>-->
+</head>
+
+<body>
+<div class="main-wrapper">
+	<div class="bg-left">
+		<img src="images/bottom-left.png">
+	</div>
+	<div class="bg-top">
+		<img src="images/top-right.png">
+	</div>
+<div class="wrapper">
+	<div class="banner">
+		<img src="images/banner.jpg" class="img-fluid">
+	</div>
+<div class="container">
+
+<div class="new-registration-wrapper">
+
+<!--	<h1>New Register</h1>
+-->
+<form>
+   <div class="form-group row">
+   <div class="col-sm-6">
+    <label for="inputName1" class="col-form-label">Name of Organization</label><span class="req">*</span>
+	   </div>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="inputName1" placeholder="Name of Organization">
+    </div>
+  </div>
+<div class="form-group row">
+   <div class="col-sm-6">
+    <label for="inputName2" class="col-form-label">Name of Nominator</label><span class="req">*</span>
+	   </div>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="inputName2" placeholder="Name of Nominator">
+    </div>
+</div>
+<div class="form-group row">
+   <div class="col-sm-6">
+    <label for="inputName3" class="col-form-label">Official email of Nominator</label><span class="req">*</span>
+	   </div>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="inputName3" placeholder="Official email of Nominator">
+    </div>
+</div>
+<div class="form-group row">
+   <div class="col-sm-6">
+    <label for="inputName4" class="col-form-label">Contact number of Nominator</label><span class="req">*</span>
+	   </div>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="inputName4" placeholder="Contact number of Nominator">
+    </div>
+</div>  
+  <div class="form-group row">
+   <div class="col-sm-6">
+    <label for="inputName5" class="col-form-label">Name of the CIO / IT Head</label><span class="req">*</span>
+	   </div>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="inputName5" placeholder="Name of the CIO / IT Head">
+    </div>
+</div>  
+   
+ 
+	<h4>Core Strategic IT priorities to achieve Business outcomes</h4>
+	
+	<p><strong>1. Datacenter Transformation</strong></p>
+	<div class="dt-wrapper">
+	    <div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label"><strong>a)</strong> How many datacenters do you have?</label>
+	   </div>
+    <div class="col-sm-6">
+		 <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio1" name="example1">
+      <label class="custom-control-label" for="customRadio1">1</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio2" name="example1">
+      <label class="custom-control-label" for="customRadio2">2</label>
+    </div>
+    		 <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio3" name="example1">
+      <label class="custom-control-label" for="customRadio3">3-5</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio4" name="example1">
+      <label class="custom-control-label" for="customRadio4">5+</label>
+    </div>
+    </div>
+		</div>
+		
+		<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label"><strong>b)</strong> What percentage of your datacenters are virtualized?</label>
+	   </div>
+    <div class="col-sm-6">
+		 <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio5" name="example2">
+      <label class="custom-control-label" for="customRadio5"> < 25% </label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio6" name="example2">
+      <label class="custom-control-label" for="customRadio6">25%- 50%</label>
+    </div>
+    		 <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio7" name="example2">
+      <label class="custom-control-label" for="customRadio7">50%-90 %</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio8" name="example2">
+      <label class="custom-control-label" for="customRadio8">100%</label>
+    </div>
+    </div>
+		</div>
+		
+		<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label"><strong>c)</strong> Key business critical applications that have been virtualized (e.g. SAP/Exchange/Oracle/Sharepoint/Core Banking/MS Dynamics/Hadoop/any other bespoke app that is critical to your business)</label>
+	   </div>
+    <div class="col-sm-6">
+		<input type="text" class="form-control">
+    </div>
+		</div>
+		
+		<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label"><strong>d)</strong></label>
+    Do you have a Multi Hypervisor environment?</div>
+    <div class="col-sm-6">
+		 <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio9" name="example3">
+      <label class="custom-control-label" for="customRadio9">Yes </label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio10" name="example3">
+      <label class="custom-control-label" for="customRadio10">No</label>
+    </div>
+
+    </div>
+		</div>
+		
+				<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label">If yes, which hypervisors do you use in your environment ?   </label>
+	   </div>
+     <div class="col-sm-6">
+		   <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheck" name="example5">
+      <label class="custom-control-label" for="customCheck">vSphere</label>
+    </div>
+     <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheck1" name="example5">
+      <label class="custom-control-label" for="customCheck1">Hyper-V</label>
+    </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheck2" name="example5">
+      <label class="custom-control-label" for="customCheck2">KVM</label>
+    </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheck3.1" name="example5">
+      <label class="custom-control-label" for="customCheck3.1">AHV</label>
+    </div>
+    <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheck3" name="example5">
+      <label class="custom-control-label" for="customCheck3">Others</label>
+    </div>
+    </div>
+		</div>
+		
+		
+				
+				<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label"><strong>e)</strong> Have you deployed Software Defined Networking/Network Virtualization solution?</label>
+	   </div>
+	   
+	   <div class="col-sm-6">
+		 <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio9.1" name="example3">
+      <label class="custom-control-label" for="customRadio9.1">Yes </label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio10.1" name="example3">
+      <label class="custom-control-label" for="customRadio10.1">No</label>
+    </div>
+
+    </div>
+    
+		</div>
+		
+		
+		<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label">If yes, please share details on the solution  </label>
+	   </div>
+     <div class="col-sm-6">
+		<input type="text" class="form-control">
+    </div>
+		</div>
+		
+		<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label"><strong>f)</strong></label>
+    Have you deployed Hyper-converged Infra/ Software Defined Storage solution? </div>
+     <div class="col-sm-6">
+		 <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio15" name="example6">
+      <label class="custom-control-label" for="customRadio15">Yes </label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio16" name="example6">
+      <label class="custom-control-label" for="customRadio16">No</label>
+    </div>
+
+    </div>
+		</div>
+		
+		
+				<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label">If yes, please share details on the solution  </label>
+	   </div>
+     <div class="col-sm-6">
+		<input type="text" class="form-control">
+    </div>
+		</div>
+		
+		
+		
+		
+			
+		<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label"><strong>g)</strong> Have you deployed Software Defined Storage solution? </label>
+	   </div>
+     <div class="col-sm-6">
+		 <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio13" name="example7">
+      <label class="custom-control-label" for="customRadio13">Yes </label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio14" name="example7">
+      <label class="custom-control-label" for="customRadio14">No</label>
+    </div>
+
+    </div>
+		</div>
+		
+		
+				<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label">If yes, please share details on the solution  </label>
+	   </div>
+     <div class="col-sm-6">
+		<input type="text" class="form-control">
+    </div>
+		</div>
+		
+		
+	</div>
+	
+	
+	<p><strong>2.  Accelerate Multi-Cloud</strong></p>
+	<div class="dt-wrapper">
+    
+    		
+		<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label"><strong>a)</strong></label>
+    Do you have a multi-cloud environment?</div>
+     <div class="col-sm-6">
+		 <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadioa2.1" name="example2.2">
+      <label class="custom-control-label" for="customRadioa2.1">Yes </label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadioa2.2" name="example2.2">
+      <label class="custom-control-label" for="customRadioa2.2">No</label>
+    </div>
+
+    </div>
+		</div>
+		
+		
+				<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label">If yes, please share details </label>
+   </div>
+     <div class="col-sm-6">
+		<input type="text" class="form-control">
+    </div>
+		</div>
+   
+   <div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label">If yes, what have you deployed</label>
+	   </div>
+    <div class="col-sm-6">
+		   <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheck12.1" name="example8">
+      <label class="custom-control-label" for="customCheck12.1">VMC on AWS </label>
+    </div>
+     <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheck12.2" name="example8">
+      <label class="custom-control-label" for="customCheck12.2">IBM Cloud for VMware Solutions </label>
+    </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheck12.3" name="example8">
+      <label class="custom-control-label" for="customCheck12.3"> Azure  VMware cloud service Providers (Netmagic, Sify, Nxtgen) </label>
+    </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheck12.4" name="example8">
+      <label class="custom-control-label" for="customCheck12.4">Other </label>
+    </div>
+    </div>
+		</div>
+   
+    
+    
+    
+	    <div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label"><strong>b)</strong> Which Public Cloud providers do you work with?  </label>
+	   </div>
+    <div class="col-sm-6">
+		   <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheck2.1" name="example8">
+      <label class="custom-control-label" for="customCheck2.1">AWS </label>
+    </div>
+     <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheck2.2" name="example8">
+      <label class="custom-control-label" for="customCheck2.2">Azure </label>
+    </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheck2.3" name="example8">
+      <label class="custom-control-label" for="customCheck2.3"> IBM </label>
+    </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheck2.4" name="example8">
+      <label class="custom-control-label" for="customCheck2.4">VMware cloud service Providers (Netmagic, Sify, Nxtgen)</label>
+    </div>
+    </div>
+		</div>
+		
+		<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label"><strong>c)</strong> Applications that are deployed on Public Cloud</label>
+	   </div>
+    <div class="col-sm-6">
+		 <div class="custom-control custom-radio">
+      <input type="radio" class="custom-control-input" id="customRadio17" name="example9">
+      <label class="custom-control-label" for="customRadio17"> Less Critical (Test/Dev) </label>
+    </div>
+    <div class="custom-control custom-radio">
+      <input type="radio" class="custom-control-input" id="customRadio18" name="example9">
+      <label class="custom-control-label" for="customRadio18">Business Critical (Production)</label>
+    </div>
+    		 <div class="custom-control custom-radio">
+      <input type="radio" class="custom-control-input" id="customRadio19" name="example9">
+      <label class="custom-control-label" for="customRadio19">Both</label>
+    </div>
+
+    </div>
+    </div>
+	
+		
+		
+		<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label"><strong>d)</strong> Have you integrated your private and Public Cloud environments (Hybrid Cloud)</label>
+	   </div>
+    <div class="col-sm-6">
+		 <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio20"  name="example10">
+      <label class="custom-control-label" for="customRadio20">Yes </label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio21"  name="example10">
+      <label class="custom-control-label" for="customRadio21">No</label>
+    </div>
+
+    </div>
+		</div>
+		
+		
+		<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label">If yes, please share details   </label>
+	   </div>
+    <div class="col-sm-6">
+		<input type="text" class="form-control">
+    </div>
+		</div>
+		
+
+		
+	</div>
+	
+	
+	<p><strong>3. Empower Digital Workspace</strong></p>
+	<div class="dt-wrapper">
+    
+   		<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label"><strong>a)</strong> Have you implemented Desktop virtualization (VDI) for your end users</label>
+	   </div>
+    <div class="col-sm-6">
+		 <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio22" name="example11">
+      <label class="custom-control-label" for="customRadio22">Yes </label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio23" name="example11">
+      <label class="custom-control-label" for="customRadio23">No</label>
+    </div>
+
+    </div>
+		</div>
+	    <div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label">If yes, what is the use-case?</label>
+	   </div>
+    <div class="col-sm-6">
+		<div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheck3a3.1" name="example12">
+      <label class="custom-control-label" for="customCheck3a3.1">Secure access to desktops to protect IP </label>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheck3a3.2" name="example12">
+      <label class="custom-control-label" for="customCheck3a3.2">Internet Separation </label>
+    </div>
+     <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheck3a3.3" name="example12">
+      <label class="custom-control-label" for="customCheck3a3.3">Optimize hardware for Training / Learning & development</label>
+    </div>
+     <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheck3a3.4" name="example12">
+      <label class="custom-control-label" for="customCheck3a3.4">Borderless ODC</label>
+    </div>
+     <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheck3a3.5" name="example12">
+      <label class="custom-control-label" for="customCheck3a3.5">Improve / Simplify manageability & operations</label>
+    </div>
+     <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheck3a3.6" name="example12">
+      <label class="custom-control-label" for="customCheck3a3.6">Application Lifecycle management</label>
+    </div>
+     <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheck3a3.7" name="example12">
+      <label class="custom-control-label" for="customCheck3a3.7">Reduce TCO</label>
+    </div>
+     <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheck3a3.8" name="example12">
+      <label class="custom-control-label" for="customCheck3a3.8">Implement BYOD</label>
+    </div>
+     <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheck3a3.9" name="example12">
+      <label class="custom-control-label" for="customCheck3Empower Digital Workspacea3.9">Transform Branch / Remote office operations</label>
+    </div>
+    
+    </div>
+
+		</div>	
+	    <div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label">If yes, which solution do you use?</label>
+	   </div>
+    <div class="col-sm-6">
+		   <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheck3.10" name="example13">
+      <label class="custom-control-label" for="customCheck3.10">VMware</label>
+    </div>
+     <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheck3.12" name="example13">
+      <label class="custom-control-label" for="customCheck3.12">Citrix  </label>
+    </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheck3.14" name="example13">
+      <label class="custom-control-label" for="customCheck3.14"> Other
+ </label>
+    </div>
+    </div>
+		</div>
+		
+		
+			<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label"><strong>b)</strong> Have you implemented Enterprise Mobility solution for your end users  </label>
+	   </div>
+    <div class="col-sm-6">
+		 <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadiob22" name="example14">
+      <label class="custom-control-label" for="customRadiob22">Yes </label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadiob23" name="example14">
+      <label class="custom-control-label" for="customRadiob23">No</label>
+    </div>
+
+    </div>
+		</div>
+	    <div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label">If yes, what is the use-case?</label>
+	   </div>
+    <div class="col-sm-6">
+		<div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheckb3.1" name="example15">
+      <label class="custom-control-label" for="customCheckb3.1">Field Mobility Management</label>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheckb3.2" name="example15">
+      <label class="custom-control-label" for="customCheckb3.2">Enabling BYO</label>
+    </div>
+     <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheckb3.3" name="example15">
+      <label class="custom-control-label" for="customCheckb3.3">Workspace Transformation</label>
+    </div>
+     <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheckb3.4" name="example15">
+      <label class="custom-control-label" for="customCheckb3.4">Application Management</label>
+    </div>
+     <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheckb3.5" name="example15">
+      <label class="custom-control-label" for="customCheck3.5">Endpoint Visibility and Threat Detection</label>
+    </div>
+     <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheckb3.6" name="example15">
+      <label class="custom-control-label" for="customCheckb3.6">Others</label>
+    </div>
+        
+    </div>
+
+		</div>
+    
+		<p><strong>c) </strong>Workplace transformation with Windows 10</p>
+    			
+	    <div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label">How many end-points are you running on Windows 10 in your environment today?</label>
+	   </div>
+    <div class="col-sm-6">
+		   <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheckbl3.10" name="example16">
+      <label class="custom-control-label" for="customCheckbl3.10">less than 500 </label>
+    </div>
+     <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheckbl3.12" name="example16">
+      <label class="custom-control-label" for="customCheckbl3.12">500-1000</label>
+    </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheckbl3.14" name="example16">
+      <label class="custom-control-label" for="customCheckbl3.14">1000-2500</label>
+    </div>
+    
+      <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheckbl3.15" name="example16">
+      <label class="custom-control-label" for="customCheckbl3.15"> 2500-5000
+ </label>
+    </div>
+    
+       <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheckbl3.16" name="example16">
+      <label class="custom-control-label" for="customCheckbl3.16"> More than 5000
+ </label>
+    </div>	 		 	
+    
+    </div>
+		</div>
+		
+		<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label">Which solution do you use for modern management of Windows 10 endpoints?</label>
+	   </div>
+    <div class="col-sm-6">
+		   <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheckbl10.1" name="example16">
+      <label class="custom-control-label" for="customCheckbl10.1">SCCM</label>
+    </div>
+     <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheckbl10.2" name="example16">
+      <label class="custom-control-label" for="customCheckbl10.2">VMWare Unified Endpoint Management</label>
+    </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customCheckbl10.3" name="example16">
+      <label class="custom-control-label" for="customCheckbl10.3">Others, please specify</label>
+    </div>
+    
+     		 	
+    
+    </div>
+		</div>
+		
+		
+		<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label">What is your biggest concern around management of these endpoints?</label>
+	   </div>
+    <div class="col-sm-6">
+		<input type="text" class="form-control">
+    </div>
+		</div>
+		
+	</div>
+	
+	
+	<p><strong>4. Transform Security</strong></p>
+	<div class="dt-wrapper">
+    
+   		<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label"><strong>a)</strong> What percentage of your IT spend is around Datacenter Security? </label>
+	   </div>
+    <div class="col-sm-6">
+		 <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadioA1"  name="example17">
+      <label class="custom-control-label" for="customRadioA1">< 25%  </label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadioA2"  name="example17">
+      <label class="custom-control-label" for="customRadioA2">25%-50 % </label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadioA3"  name="example17">
+      <label class="custom-control-label" for="customRadioA3">50% - 75%</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadioA4"  name="example17">
+      <label class="custom-control-label" for="customRadioA4">75%+ </label>
+    </div>
+
+    </div>
+		</div>
+	    <div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label"><strong>b)</strong> Have you had a security breach in the last 12-18 months in your Datacenter?</label>
+	   </div>
+    <div class="col-sm-6">
+		 <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadiobA1"  name="example18">
+      <label class="custom-control-label" for="customRadiobA1">Yes </label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadiobA2" name="example18">
+      <label class="custom-control-label" for="customRadiobA2">No</label>
+    </div>
+
+    </div>
+
+		</div>
+   
+   
+   
+   <div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label">If yes, please share details   </label>
+	   </div>
+    <div class="col-sm-6">
+		<input type="text" class="form-control">
+    </div>
+		</div>
+   
+   
+    
+    	<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label"><strong>c)</strong>  What percentage of your Datacenter traffic is East-West as compared to North-South? </label>
+	   </div>
+    <div class="col-sm-6">
+		 <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadioC1" name="example19">
+      <label class="custom-control-label" for="customRadioC1">< 25%  </label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadioC2" name="example19">
+      <label class="custom-control-label" for="customRadioC2">25%-50 % </label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadioC3" name="example19">
+      <label class="custom-control-label" for="customRadioC3">50% - 75%</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadioC4" name="example19">
+      <label class="custom-control-label" for="customRadioC4">75%+ </label>
+    </div>
+        <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadioC4" name="example19">
+      <label class="custom-control-label" for="customRadioC4">Not aware </label>
+    </div>
+
+    </div>
+		</div>
+    		
+    			
+    					
+	<div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label"><strong>d)</strong> Have you implemented “Zero Trust Security” Architecture in your Datacenter?</label>
+	   </div>
+    <div class="col-sm-6">
+		 <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadiobd1" name="example20">
+      <label class="custom-control-label" for="customRadiobd1">Yes </label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadiobd2" name="example20">
+      <label class="custom-control-label" for="customRadiobd2">No</label>
+    </div>
+
+    </div>
+
+		</div>   
+		
+		 
+		     <div class="form-group row">
+   <div class="col-sm-6">
+    <label class="col-form-label">If yes, please share details   </label>
+	   </div>
+    <div class="col-sm-6">
+		<input type="text" class="form-control">
+    </div>
+		</div>
+    
+		
+		
+
+		
+	</div>
+	
+	<p><strong>5) Please share the details on IT Innovations carried out in past 12 months which has resulted in significant business benefits, exceptional experiences for your end users.</strong></p>
+	<div class="dt-wrapper">
+    Below are some of the examples:-
+		<ul class="dt-wrapper-bulate">
+			<li>Reduced provisioning time for users from 3 weeks to few hrs.</li>
+			<li>Reduced the cost of storage from $xx per TB to $yy per TB</li>
+			<li>Reliable DR solutions with RTO of under 2 hrs.</li>
+			<li>Implemented secured BYOD policy</li>
+			<li>CapEx savings by implementing Microsegmentation for improved control of Server to Server traffic inside Datacenter</li>
+			<li>OpeEx savings by automating network provisioning and reducing time to provision networks from nos. of days to nos. of hours/minutes.</li>
+			<li>Increased service availability by improving uptime for business critical applications (reducing impact of unplanned outage - $ per incident in Opex Savings)</li>
+		</ul>
+    </div>
+    
+    <div class="form-group">
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+  
+  
+  <div class="form-group row">
+	  <div class="col-sm-6"></div>
+    <div class="col-sm-6">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </div>
+</form>
+		<p style="color: #F00; font-size: 12px;">* Compulsory Fields</p>
+		<p style="font-family: Arial, Helvetica, sans-serif;  font-size: 12px; color: #999;">Disclaimer: All final award winners would be decided by VMware internal jury and the decision of the jury in the shortlisting process is final and binding on all participants and VMware will not entertain any queries on the same.</p>
+	
+
+</div>
+</div>
+	</div>
+	
+	<div id="page-footer" class="non-responsive-width"></div>
+	</div>
+
+	
+
+<script type="text/javascript" src="https://www.vmware.com/bin/vmware/template/scrapper.us.js"></script>
+<script type="text/javascript" src="https://www.vmware.com/content/dam/vmwaredesigns/scraper/non-responsive.js"></script>				
+</body>
+</html>

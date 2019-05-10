@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin: 0px; padding: 0px; }
+
+html,
+body {
+   background: url(../images/plain-back.png) repeat !important; background-size: 51.7%;
+}
+
+body{ background: url(../images/plain-back.png) !important; background-size: 51.7%; }
+
+.new-registration-wrapper{ margin-top: 30px; color:#000; }
+
+.new-registration-wrapper h1{ border-bottom: 1px solid #000; padding-bottom: 20px;  margin-bottom: 30px; font-size:28px;}
+.new-registration-wrapper .form-control{border-radius:0px; border: 1px solid #484848;}
+
+.new-registration-wrapper h4{ font-size:18px;}
+
+.req {
+    color: #F00;
+}
+
+
+
+.dt-wrapper{padding-left: 25px;}
+
+.dt-wrapper-bulate{padding-left: 35px;}
+
+.wrapper{ max-width:1000px; margin: 0 auto; background:#fff; position:relative; z-index: 99; overflow-x: auto;
+-webkit-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+}
+
+.bg-left{ position: absolute; left: 0;     bottom: 7%;
+ width: 30%; }
+.bg-left img{ width: 100%;}
+.bg-top{position: absolute; right: 0px; top: 0px; width: 30%; }
+.bg-top img{ width: 100%;}
+
+.main-wrapper{ position: relative; width: 100%; height: auto; }
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxx*/
+
+.new-registration-wrapper .custom-control-label::before {
+    position: absolute;
+    top: .25rem;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    content: "";
+    background-color: #fff;
+    border: #484848 solid 2px;
+}
+
+
+.new-registration-wrapper  .btn-primary { padding: 8px 40px;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    background-image: -webkit-linear-gradient(top, #0095D3 0%, #007FB4 100%);
+    background-image: -o-linear-gradient(top, #0095D3 0%, #007FB4 100%);
+    background-image: linear-gradient(to bottom, #0095D3 0%, #007FB4 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0095D3', endColorstr='#FF007FB4', GradientType=0);
+}
+
+/*.title-color{ color:#006990; border-top: 8px #ccc ridge; padding: 20px 0px;;   }*/
+.title-color{ color:#006990; border-top: 8px #ccc ridge; padding: 20px 0px; font-size: 20px;font-family: 'metropolisbold';   }
